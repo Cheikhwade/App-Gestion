@@ -38,7 +38,7 @@ class ArticuloController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {        
+    {
         $articulos = new Articulo();
 
         $articulos->codigo = $request->get('codigo');

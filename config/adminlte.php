@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Info</b>DP',
+    'logo' => '<b>Gestion de stock</b> C.W',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -242,15 +242,16 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Artículos',
+            'text'        => 'Entrees et Sorties',
             'url'         => 'articulos',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 'CRUD',
+            'label'       => 'C.W',
             'label_color' => 'warning',
         ],
-        ['header' => 'Configuración de la cuenta'],
+
+        ['header' => 'Configuration'],
         [
-            'text' => 'Perfil de Usuario',
+            'text' => 'Mon profile',
             'url'  => 'user/profile',
             'icon' => 'fas fa-fw fa-user',
         ],
@@ -259,52 +260,52 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
+        // [
+        //     'text'    => 'multilevel',
+        //     'icon'    => 'fas fa-fw fa-share',
+        //     'submenu' => [
+        //         [
+        //             'text' => 'level_one',
+        //             'url'  => 'user/profile',
+        //         ],
+        //         [
+        //             'text'    => 'level_one',
+        //             'url'     => '#',
+        //             'submenu' => [
+        //                 [
+        //                     'text' => 'level_two',
+        //                     'url'  => '#',
+        //                 ],
+        //                 [
+        //                     'text'    => 'level_two',
+        //                     'url'     => '#',
+        //                     'submenu' => [
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                         [
+        //                             'text' => 'level_three',
+        //                             'url'  => '#',
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //         ],
+        //         [
+        //             'text' => 'level_one',
+        //             'url'  => '#',
+        //         ],
+        //     ],
+        // ],
+        ['header' => 'Voir'],
         [
             'text'       => 'important',
             'icon_color' => 'red',
             'url'        => '#',
         ],
         [
-            'text'       => 'warning',
+            'text'       => 'Traitement',
             'icon_color' => 'yellow',
             'url'        => '#',
         ],

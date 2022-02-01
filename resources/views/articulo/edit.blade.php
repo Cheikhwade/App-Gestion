@@ -3,31 +3,31 @@
 @section('title', 'CRUD con Laravel 8')
 
 @section('content_header')
-    <h1>Editar Artículo</h1>
+    <h1>Editer</h1>
 @stop
 
 @section('content')
-   <form action="/articulos/{{$articulo->id}}" method="POST">    
+   <form action="/articulos/{{$articulo->id}}" method="POST">
    @csrf
    @method('PUT')
   <div class="mb-3">
-    <label for="" class="form-label">Código</label>
-    <input id="codigo" name="codigo" type="text" class="form-control" value="{{$articulo->codigo}}">    
+    <label for="" class="form-label">Quantite</label>
+    <input id="codigo" name="codigo" type="text" class="form-control" value="{{$articulo->codigo}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Descripción</label>
+    <label for="" class="form-label">Produit</label>
     <input id="descripcion" name="descripcion" type="text" class="form-control" value="{{$articulo->descripcion}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Cantidad</label>
+    <label for="" class="form-label">Sortie</label>
     <input id="cantidad" name="cantidad" type="number" class="form-control" value="{{$articulo->cantidad}}">
   </div>
   <div class="mb-3">
-    <label for="" class="form-label">Precio</label>
+    <label for="" class="form-label">Prix</label>
     <input id="precio" name="precio" type="number" step="any" class="form-control" value="{{$articulo->precio}}">
   </div>
-  <a href="/articulos" class="btn btn-secondary">Cancelar</a>
-  <button type="submit" class="btn btn-primary">Guardar</button>
+  <a href="/articulos" class="btn btn-secondary">Fermer</a>
+  <button type="submit" class="btn btn-primary">Enregistrer</button>
 </form>
 @stop
 
@@ -35,5 +35,5 @@
     <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
 
-@section('js')  
+@section('js')
 @stop
